@@ -42,7 +42,7 @@ public class PersonasController {
 
 
     //Ingresa al procedimiento almacenado SPD_INSERTA_PERSONA_ADMIN mediante insertaPersonaAdmin
-    @PostMapping("admnistrador")
+    @PostMapping("administrador")
     public ResponseEntity<String> crearAdministrador(@RequestBody PersonaUsuarioRequest request){
         try {
             personasService.insertarAdministrador(request);
