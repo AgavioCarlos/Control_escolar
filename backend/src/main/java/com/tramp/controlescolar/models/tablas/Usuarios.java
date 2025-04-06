@@ -4,8 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import java.util.Date;
-@Getter
-@Setter
+
 @Entity
 @Table(name = "tbl_usuarios")
 public class Usuarios {
@@ -22,7 +21,7 @@ public class Usuarios {
     private String usuario;
 
     //Corregir en la base de datos
-    @Column(name = "ccontraseña", length = 50, nullable = false)
+    @Column(name = "ccontrasenia", length = 50, nullable = false)
     private String contrasenia;
 
     @Column(name = "bhabilitado", nullable = false)
